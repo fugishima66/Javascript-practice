@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Quantico&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Quantico", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(#df6868, #8d81e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#buttons {
+  width: 80vw;
+  border-radius: 1.2em;
+  top: 50%;
+  padding: 1em;
+  background: rgba(36, 25, 46, 0.4);
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0.2em 0.5em 0.2em #00000086;
+  overflow: hidden;
+}
+.btn {
+  background-color: rgba(36, 25, 46, 0.281);
+  color: #fff;
+  font-size: 18px;
+  width: 7em;
+  border-radius: 1.2em;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.5em;
+  padding: 0.5em 2em;
+  margin: 0.5em;
+  transition: all 150ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.btn:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 600px) {
+  #buttons {
+    width: 480px;
+  }
+}

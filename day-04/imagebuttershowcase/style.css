@@ -1,0 +1,35 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgb(21, 18, 21) 75%, #313131 76%, rgb(30, 27, 34));
+  margin: 0rem;
+  overflow: hidden;
+}
+
+#image-track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  /* position: relative; */
+  object-position: 100% 50%;
+}
+
+#image-track > .image::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  bottom: 3px;
+  right: 3px;
+  background: azure;
+  transform: translate(0%, 90%);
+  z-index: 2;
+}
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%);
+}

@@ -1,0 +1,23 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: #000;
+  overflow: hidden;
+}
+
+h1 {
+  /* font-family: 'Montserrat', monospace; */
+  font-family: 'Space Mono', monospace;
+  color: #fff;
+  font-size: clamp(3rem, 10vw, 10rem);
+  padding: 0rem clamp(1rem, 2vw, 3rem);
+}
